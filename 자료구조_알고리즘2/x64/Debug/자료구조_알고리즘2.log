@@ -1,0 +1,5 @@
+﻿  2.c
+C:\Users\DSM2022\Desktop\자료구조_알고리즘2\2.c(52,17): warning C4101: 'wh' :참조되지 않은 지역 변수입니다.
+C:\Users\DSM2022\Desktop\자료구조_알고리즘2\2.c(53,6): warning C4101: 'val' :참조되지 않은 지역 변수입니다.
+C:\Users\DSM2022\Desktop\자료구조_알고리즘2\2.c(52,6): warning C4101: 'r' :참조되지 않은 지역 변수입니다.
+  자료구조_알고리즘2.vcxproj -> C:\Users\DSM2022\Desktop\자료구조_알고리즘2\x64\Debug\자료구조_알고리즘2.exe
