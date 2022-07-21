@@ -1,5 +1,5 @@
 ﻿  2.c
-C:\Users\DSM2022\Desktop\자료구조_알고리즘2\2.c(52,17): warning C4101: 'wh' :참조되지 않은 지역 변수입니다.
-C:\Users\DSM2022\Desktop\자료구조_알고리즘2\2.c(53,6): warning C4101: 'val' :참조되지 않은 지역 변수입니다.
-C:\Users\DSM2022\Desktop\자료구조_알고리즘2\2.c(52,6): warning C4101: 'r' :참조되지 않은 지역 변수입니다.
-  자료구조_알고리즘2.vcxproj -> C:\Users\DSM2022\Desktop\자료구조_알고리즘2\x64\Debug\자료구조_알고리즘2.exe
+  LINK : C:\Users\DSM2022\Desktop\git\Algorithm-DataStructure\자료구조_알고리즘2\x64\Debug\자료구조_알고리즘2.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+3.obj : error LNK2005: Printout이(가) 2.obj에 이미 정의되어 있습니다.
+3.obj : error LNK2005: main이(가) 2.obj에 이미 정의되어 있습니다.
+C:\Users\DSM2022\Desktop\git\Algorithm-DataStructure\자료구조_알고리즘2\x64\Debug\자료구조_알고리즘2.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
