@@ -2,6 +2,53 @@
 #include <stdlib.h>
 #include <time.h>
 
+typedef struct node {
+	int data;
+	struct node* Link;
+} Node;
+
+void Printout(Node* List) {
+	Node* ptr = List->Link;
+	while (ptr != NULL) {
+		printf("%4d", ptr->data);
+		ptr = ptr->Link;
+	}
+	printf("\n\n");
+}
+
+void InsertNode(Node* List, Node* NewNode) {
+	Node* ptr = List;
+
+	if (ptr->Link == NULL)
+		ptr->Link = NewNode;
+	else {
+		while (ptr->Link != NULL && ptr->Link->data < NewNode->data)
+			ptr = ptr->Link;
+	}
+	NewNode->Link = ptr->Link;
+	ptr->Link = NewNode;
+}
+int main() {
+	int data[10] = { 211,160,173,86,90,232,4,228,244,212 };
+	int cnt;
+
+	Node* List = (Node*)malloc(sizeof(Node));
+	List->Link = NULL;
+	
+	Node* Mynode;
+
+	 for (cnt = 0; cnt < 10; cnt++) {
+		Mynode = (Node *)malloc(sizeof(Node));
+		Mynode->data = data[cnt];
+		Mynode->Link = NULL;
+
+		InsertNode(List, Mynode);
+
+		// ch = getch();
+	 }
+	 Printout(List);
+}
+
 int Stack[10][10], SP[10];
 
 void PushST(int tong, int num) {
@@ -49,8 +96,8 @@ void popLeft(int *data) {
 }
 
 int main() {
-	int r, c, cnt, wh, su, sw;
-	int val, gijun; // num = 0
+	int c, cnt, su, sw;
+	int gijun; // num = 0
 	int data[10] = { 211,160,173,86,90,232,4,228,244,212 };
 	// srand(time(NULL));
 
